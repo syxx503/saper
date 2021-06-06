@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Saper</title>
+	<meta charset="UTF-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="images/logo/favicon.png" type="image/png">
+	<link media="screen" onload='if(media!="all") media="all"' rel="stylesheet" href="style/style.css">
+</head>
+<body class="lock">
+	<section class="menu df">
+		<div class="container">
+			<div class="menu__logo-block df">
+				<img class="menu__logo" src="images/logo/logo.svg" alt="Saper">
+				<h1 class="menu__title">Game</h1>
+			</div>
+			<div class="menu__text">
+				<p>Обнаружь все бомбы на поле. Используй заработанные очки от бомб чтобы проийти игру еще быстрее!</p>
+				<p>Загрузка игры может занять некоторое время (~1с - ~16с)</p>
+			</div>
+			<div class="menu__hard-level-block hard-level">
+				<div class="hard-level__input-block">
+					<input class="hard-level__input" type="range" min="15" max="400" id="in">
+					<div class="hard-level__count">
+						Количество Бомб:
+						<span id="bombs"></span>
+					</div>
+					<div class="hard-level__size-block">
+						Размер сетки:
+						<span class="hard-level__size" id="size"></span>
+					</div>
+				</div>
+			</div>
+			<div class="menu__btn-block">
+				<button class="menu__btn" id="btn">Начать</button>
+			</div>
+		</div>
+	</section>
+	<section class="contain">
+		<div class="contain__border"></div>
+		<div class="container">
+			<div class="contain__window">
+				<header class="contain__header header">
+					<div class="header__column">
+						<div class="header__game-time">
+							<div id="time">0:0:0</div>
+						</div>
+					</div>
+				</header>
+				<header class="contain__header header">
+					<div class="header__row df">
+						<div class="header__column">
+							<div class="header__bomb-count">
+								Осталось Бомб: <span id="killed"></span>
+							</div>
+						</div>
+						<div class="header__column">
+							<div class="header__btn-block df">
+								<button class="header__btn" id="reload"><img class="header__smile" src="images/icons/ok.png" alt="Ok"></button>
+								<button class="header__btn" id="getFlag"><img src="images/icons/flag.png" alt="Get Flag"></button>
+							</div>
+						</div>
+					</div>
+				</header>
+				<div class="contain__table df">
+					<div class="contain__table-alert">
+						<span>Игра Окончена</span>
+					</div>
+				</div>
+				<footer class="contain__footer footer">
+					<div class="footer__row df">
+						<div class="footer__column">
+							<div class="footer__copyright">
+								© Copyright 2021 by
+								<a class="author" href="https://github.com/syxx503">synfaxx503</a>
+							</div>
+						</div>
+						<div class="footer__column">
+							<div class="footer__link-row df">
+								<a class="footer__link" href="mailto:microsyxx@gmail.com">
+									<img src="images/social/gmail.svg" alt="Gmail">
+								</a>
+								<a class="footer__link" href="https://www.facebook.com/freelancer.eldar">
+									<img src="images/social/facebook.svg" alt="Facebook">
+								</a>
+								<a class="footer__link" href="https://github.com/syxx503">
+									<img src="images/social/github.svg" alt="Github">
+								</a>
+								<a class="footer__link" href="https://vk.com/synfaxx503">
+									<img src="images/social/vk.svg" alt="VKontakte">
+								</a>
+								<a class="footer__link" href="https://twitter.com/J931mReIFXueiUL">
+									<img src="images/social/twitter.svg" alt="Twitter">
+								</a>
+								<a class="footer__link" href="https://www.instagram.com/synfaaaaa503">
+									<img src="images/social/instagram.svg" alt="Instagram">
+								</a>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</section>
+	<script src="script/main.js"></script>
+</body>
+</html>
