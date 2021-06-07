@@ -115,7 +115,7 @@ document.getElementById("btn").addEventListener("click", function(){
 					},1000);
 				};
 
-				if (flagLogic(el) || el.classList.contains("item_block")){ return; };
+				if (flagLogic(el) || el.classList.contains("item_block") || el.classList.contains("item_flag")){ return; };
 
 				if (flagArr.length > 0 && !el.classList.contains("item_open") && !document.getElementById("getFlag").classList.contains("toggle")){
 					flagArr.forEach(function(item){
