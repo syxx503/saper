@@ -40,7 +40,12 @@
 					</div>
 					Начать игру с полем пустой ячейки
 				</label>
-				<button class="menu__btn" id="btn">Начать</button>
+				<div class="menu__btn-row df">
+					<button class="menu__btn" id="btn">Начать</button>
+					<div class="loading-block">
+						<img class="loading" src="images/gif/loading.gif" alt="loading..">
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -61,17 +66,18 @@
 							<div class="header__bomb-count">
 								Осталось Бомб: <span id="killed"></span>
 							</div>
-							<div class="header__coins-count">
-								Полученные очки: <span id="coins" title="Найди одну бомбу чтобы получить одно очко">$0</span>
+							<div class="header__coins-count" title="Найди одну бомбу чтобы получить одно очко или собирай монеты">
+								Полученные очки: <span id="coins">$0</span>
 							</div>
 							<div class="header__get-item">
-								<button class="header__get-item-btn df">Открыть ячейку <img src="images/icons/open-cell.svg" alt="ошибка отрисовки"> - $20</button>
+								<button class="header__get-item-btn df" id="open-item" title="Shift + ЛКМ">Открыть ячейку <img src="images/icons/open-cell.svg" alt="ошибка отрисовки"> - $20</button>
+								<button class="header__get-item-btn" id="get-coins" title="Ctrl + Enter">Собрать все открытые монеты</button>
 							</div>
 						</div>
 						<div class="header__column">
 							<div class="header__btn-block df">
-								<button class="header__btn" id="reload"><img class="header__smile" src="images/icons/ok.png" alt="Ok"></button>
-								<button class="header__btn" id="getFlag" title="Ctrl"><img src="images/icons/flag.png" alt="Get Flag"></button>
+								<button class="header__btn" id="reload" title="Начать заново"><img class="header__smile" src="images/icons/ok.png" alt="Ok"></button>
+								<button class="header__btn" id="getFlag" title="Ctrl + ЛКМ"><img src="images/icons/flag.png" alt="Get Flag"></button>
 							</div>
 						</div>
 					</div>
