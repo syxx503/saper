@@ -16,20 +16,31 @@
 				<h1 class="menu__title">Game</h1>
 			</div>
 			<div class="menu__text">
-				<p>Обнаружь все бомбы на поле. Используй заработанные очки от бомб чтобы проийти игру еще быстрее!</p>
-				<p>Загрузка игры может занять некоторое время (~1с - ~22с)</p>
+				<p>Обнаружь все бомбы на поле. Используй заработанные очки от бомб и монет чтобы победить в игре еще быстрее и проще!</p>
+				<p>Загрузка игры может занять некоторое время (~1с - ~150с)</p>
 			</div>
 			<div class="menu__hard-level-block hard-level">
-				<div class="hard-level__input-block">
-					<input class="hard-level__input" type="range" min="15" max="500" id="in">
-					<div class="hard-level__count">
-						Количество Бомб:
-						<span id="bombs"></span>
+				<div class="hard-level__input-block df">
+					<input class="hard-level__input" type="range" min="10" max="1000" id="in">
+					<input class="hard-level__input hard-level__input_text" type="number" min="10" max="1000" id="in_text">
+				</div>
+				<div class="hard-level__input-row df">
+					<div class="hard-level__input-block">
+						Длина поля
+						<input class="hard-level__input hard-level__input_size" type="number" id="y_width" min="6" max="65" value="25">
 					</div>
-					<div class="hard-level__size-block">
-						Размер сетки:
-						<span class="hard-level__size" id="size"></span>
+					<div class="hard-level__input-block">
+						Высота поля
+						<input class="hard-level__input hard-level__input_size" type="number" id="x_width" min="6" max="65" value="20">
 					</div>
+				</div>
+				<div class="hard-level__count">
+					Количество Бомб:
+					<span id="bombs"></span>
+				</div>
+				<div class="hard-level__size-block">
+					Размер поля:
+					<span class="hard-level__size" id="size"></span>
 				</div>
 			</div>
 			<div class="menu__btn-block">
@@ -56,7 +67,7 @@
 				<header class="contain__header header">
 					<div class="header__column">
 						<div class="header__game-time">
-							<div id="time">0:0:0</div>
+							<div id="time">000:00:00</div>
 						</div>
 					</div>
 				</header>
@@ -70,7 +81,7 @@
 								Полученные очки: <span id="coins">$0</span>
 							</div>
 							<div class="header__get-item">
-								<button class="header__get-item-btn df" id="open-item" title="Shift + ЛКМ">Открыть ячейку <img src="images/icons/open-cell.svg" alt="ошибка отрисовки"> - $20</button>
+								<button class="header__get-item-btn df" id="open-item" title="Tab">Открыть ячейку <img src="images/icons/open-cell.svg" alt="ошибка отрисовки"> - $20</button>
 								<button class="header__get-item-btn" id="get-coins" title="Ctrl + Enter">Собрать все открытые монеты</button>
 							</div>
 						</div>
