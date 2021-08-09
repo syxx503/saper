@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Saper</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="images/logo/favicon.png" type="image/png">
+	<link media="screen" onload='if(media!="all") media="all"' rel="stylesheet" href="styles/statistic.css">
+</head>
+<body>
+	<section class="main">
+		<div class="container">
+			<div class="main__bgi"></div>
+			<div class="main__back-block">
+				<a class="main__back" href="https://syxx503.github.io/saper">< Вернуться</a>
+			</div>
+			<h1 class="main__title">Статистика</h1>
+			<div class="main__content">
+				<div class="main__row df">
+					<div class="main__column df">
+						<div class="main__item item">
+							<h2 class="item__title">Найденые ячейки</h2>
+							<div class="item__row df">
+								<div class="item__column df">
+									<div class="item__collection df" data-collect="one">
+										<span>?</span>
+									</div>
+								</div>
+								<div class="item__column df">
+									<div class="item__collection df" data-collect="two">
+										<span>?</span>
+									</div>
+								</div>
+								<div class="item__column df">
+									<div class="item__collection df" data-collect="three">
+										<span>?</span>
+									</div>
+								</div>
+								<div class="item__column df">
+									<div class="item__collection df" data-collect="four">
+										<span>?</span>
+									</div>
+								</div>
+								<div class="item__column df">
+									<div class="item__collection df" data-collect="five">
+										<span>?</span>
+									</div>
+								</div>
+								<div class="item__column df">
+									<div class="item__collection df" data-collect="six">
+										<span>?</span>
+									</div>
+								</div>
+								<div class="item__column df">
+									<div class="item__collection df" data-collect="seven">
+										<span>?</span>
+									</div>
+								</div>
+								<div class="item__column df">
+									<div class="item__collection df" data-collect="eight">
+										<span>?</span>
+									</div>
+								</div>
+							</div>
+							<div class="item__row df">
+								<div class="item__column df">
+									<div class="item__collection df" data-collect="one-coin">
+										<span>?</span>
+									</div>
+								</div>
+								<div class="item__column df">
+									<div class="item__collection df" data-collect="five-coin">
+										<span>?</span>
+									</div>
+								</div>
+								<div class="item__column df">
+									<div class="item__collection df" data-collect="ten-coin">
+										<span>?</span>
+									</div>
+								</div>
+								<div class="item__column df">
+									<div class="item__collection df" data-collect="fifty-coin">
+										<span>?</span>
+									</div>
+								</div>
+							</div>
+							<div class="item__row df">
+								<div class="item__column df">
+									<div class="item__collection df" data-collect="zero">
+										<span>?</span>
+									</div>
+								</div>
+								<div class="item__column df">
+									<div class="item__collection df" data-collect="flagBomb boom openBombs" data-src="images/icons/bomb.svg">
+										<span>?</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main__column df auto">
+						<div class="main__item item">
+							<h2 class="item__title">Общее</h2>
+							<div class="item__statistic statistic">
+								<div class="statistic__row df">
+									<div class="statistic__column">Количество пройденных игр</div>
+									<div class="statistic__column" data-count="games"></div>
+								</div>
+								<div class="statistic__row df">
+									<div class="statistic__column">Количество выигранных игр</div>
+									<div class="statistic__column" data-count="won"></div>
+								</div>
+								<div class="statistic__row df">
+									<div class="statistic__column">Количество проигранных игр</div>
+									<div class="statistic__column" data-count="lose"></div>
+								</div>
+								<div class="statistic__row df">
+									<div class="statistic__column">Количество выявленных бомб</div>
+									<div class="statistic__column" data-count="openBombs"></div>
+								</div>
+								<div class="statistic__row df">
+									<div class="statistic__column">Сумма полученных очков</div>
+									<div class="statistic__column" data-count="points"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main__row df">
+					<div class="main__column df flex50">
+						<div class="main__item item">
+							<h2 class="item__title">Количество кликов</h2>
+							<div class="item__statistic statistic">
+								<div class="statistic__row df">
+									<div class="statistic__column">По всем ячейкам</div>
+									<div class="statistic__column" data-count="clicks"></div>
+								</div>
+								<div class="statistic__row df">
+									<div class="statistic__column">По цифрам</div>
+									<div class="statistic__column" data-count="numbers"></div>
+								</div>
+								<div class="statistic__row df">
+									<div class="statistic__column">По бомбам с флагом</div>
+									<div class="statistic__column" data-count="flagBomb"></div>
+								</div>
+								<div class="statistic__row df">
+									<div class="statistic__column">По бомбам без флага</div>
+									<div class="statistic__column" data-count="boom"></div>
+								</div>
+								<div class="statistic__row df">
+									<div class="statistic__column">По пустым ячейкам</div>
+									<div class="statistic__column" data-count="empty"></div>
+								</div>
+								<div class="statistic__row df">
+									<div class="statistic__column">По монетам</div>
+									<div class="statistic__column" data-count="coins"></div>
+								</div>
+								<div class="statistic__row df">
+									<div class="statistic__column">Двойные по ячейкам</div>
+									<div class="statistic__column" data-count="dblclick"></div>
+								</div>
+								<div class="statistic__row df">
+									<div class="statistic__column">По кнопкам в игре</div>
+									<div class="statistic__column" data-count="buttons"></div>
+								</div>
+								<div class="statistic__row df">
+									<div class="statistic__column">Нажатые комбинации клавиш</div>
+									<div class="statistic__column" data-count="combinations" data-max="999999999999"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main__column df flex50">
+						<div class="main__item item">
+							<h2 class="item__title">Количество открытых ячеек</h2>
+							<div class="item__statistic statistic">
+								<div class="statistic__row df">
+									<div class="statistic__column">Ячейки с цифрой "1"</div>
+									<div class="statistic__column" data-count="one"></div>
+								</div>
+								<div class="statistic__row df">
+									<div class="statistic__column">Ячейки с цифрой "2"</div>
+									<div class="statistic__column" data-count="two"></div>
+								</div>
+								<div class="statistic__row df">
+									<div class="statistic__column">Ячейки с цифрой "3"</div>
+									<div class="statistic__column" data-count="three"></div>
+								</div>
+								<div class="statistic__row df">
+									<div class="statistic__column">Ячейки с цифрой "4"</div>
+									<div class="statistic__column" data-count="four"></div>
+								</div>
+								<div class="statistic__row df">
+									<div class="statistic__column">Ячейки с цифрой "5"</div>
+									<div class="statistic__column" data-count="five"></div>
+								</div>
+								<div class="statistic__row df">
+									<div class="statistic__column">Ячейки с цифрой "6"</div>
+									<div class="statistic__column" data-count="six"></div>
+								</div>
+								<div class="statistic__row df">
+									<div class="statistic__column">Ячейки с цифрой "7"</div>
+									<div class="statistic__column" data-count="seven"></div>
+								</div>
+								<div class="statistic__row df">
+									<div class="statistic__column">Ячейки с цифрой "8"</div>
+									<div class="statistic__column" data-count="eight"></div>
+								</div>
+								<div class="statistic__row df">
+									<div class="statistic__column">Пустые ячейки</div>
+									<div class="statistic__column" data-count="zero"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main__row df">
+					<div class="main__column df flex50">
+						<div class="main__item item">
+							<h2 class="item__title">Время в игре</h2>
+							<div class="item__statistic statistic">
+								<div class="statistic__row df">
+									<div class="statistic__column">Количество часов</div>
+									<div class="statistic__column" data-count="hours"></div>
+								</div>
+								<div class="statistic__row df">
+									<div class="statistic__column">Количество минут</div>
+									<div class="statistic__column" data-count="minutes"></div>
+								</div>
+								<div class="statistic__row df">
+									<div class="statistic__column">Количество секунд</div>
+									<div class="statistic__column" data-count="seconds"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main__column df flex50">
+						<div class="main__item item">
+							<h2 class="item__title">Количество собраных монет</h2>
+							<div class="item__statistic statistic">
+								<div class="statistic__row df">
+									<div class="statistic__column df">Монета <img src="images/coins/one-coin.svg" alt='"1"'></div>
+									<div class="statistic__column" data-count="one-coin"></div>
+								</div>
+								<div class="statistic__row df">
+									<div class="statistic__column df">Монета <img src="images/coins/five-coin.svg" alt='"5"'></div>
+									<div class="statistic__column" data-count="five-coin"></div>
+								</div>
+								<div class="statistic__row df">
+									<div class="statistic__column df">Монета <img src="images/coins/ten-coin.svg" alt='"10"'></div>
+									<div class="statistic__column" data-count="ten-coin"></div>
+								</div>
+								<div class="statistic__row df">
+									<div class="statistic__column df">Монета <img src="images/coins/fifty-coin.svg" alt='"50"'></div>
+									<div class="statistic__column" data-count="fifty-coin"></div>
+								</div>
+								<div class="statistic__row df">
+									<div class="statistic__column df">Все монеты</div>
+									<div class="statistic__column" data-count="all-coin"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main__row df fe">
+					<div class="main__column df">
+						<div class="main__item item">
+							<div class="item__social-row df">
+								<a class="item__social" href="mailto:microsyxx@gmail.com">
+									<img src="images/social/gmail.svg" alt="Gmail">
+								</a>
+								<a class="item__social" href="https://www.facebook.com/freelancer.eldar">
+									<img src="images/social/facebook.svg" alt="Facebook">
+								</a>
+								<a class="item__social" href="https://github.com/syxx503">
+									<img src="images/social/github.svg" alt="Github">
+								</a>
+								<a class="item__social" href="https://vk.com/synfaxx503">
+									<img src="images/social/vk.svg" alt="VKontakte">
+								</a>
+								<a class="item__social" href="https://twitter.com/J931mReIFXueiUL">
+									<img src="images/social/twitter.svg" alt="Twitter">
+								</a>
+								<a class="item__social" href="https://www.instagram.com/synfaaaaa503">
+									<img src="images/social/instagram.svg" alt="Instagram">
+								</a>
+							</div>
+							<script>
+								function deleteInfo(){
+									if (!confirm("Вы уверены, что хотите безвозвратно удалить данные по статистике?")){
+										return;
+									};
+
+									let
+										arrNames 	= ["fastStart", "xWidth", "yWidth", "bombs"],
+										removeArr 	= [];
+									
+									for (let i = 0; i < localStorage.length; i++){
+										if ( !arrNames.includes(localStorage.key(i)) ){
+											removeArr.push(localStorage.key(i));
+										};
+									};
+
+									for (let index in removeArr){
+										localStorage.removeItem(removeArr[index]);
+
+										if (index == removeArr.length - 1){
+											location.reload(false);
+										};
+									};
+								};
+							</script>
+							<div class="item__button-block">
+								<button class="item__button" onclick="deleteInfo()">Удалить Данные</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="scripts/statistic.js"></script>
+</body>
+</html>
