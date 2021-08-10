@@ -17,14 +17,28 @@
   z-index: -10;
 }
 .main__back {
-  padding: 8px 20px;
+  max-width: 220px;
+  padding: 8px 28px 8px 20px;
   border: 2px solid #EFF623;
-  color: #EFF623;
   background-color: #222;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #EFF623;
+}
+.main__back svg {
+  max-height: 18px;
+  margin: 0 8px 0 0;
+}
+.main__back path {
+  fill: #EFF623;
 }
 .main__back:hover {
   background-color: #EFF623;
   color: #000;
+}
+.main__back:hover path {
+  fill: #000;
 }
 .main__back-block {
   margin: 0 0 24px;
